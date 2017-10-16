@@ -49,7 +49,7 @@ public class DataMunger {
 		if (null == queryString || queryString.trim().isEmpty()) {
 			return null;
 		}
-
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		// Printing Array
@@ -69,7 +69,7 @@ public class DataMunger {
 		if (null == queryString || queryString.trim().isEmpty()) {
 			return null;
 		}
-
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		for (int i = 0; i < strArray.length; i++) {
@@ -94,6 +94,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		String tempString = "";
@@ -123,6 +124,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		String whereKeyword = null;
@@ -170,6 +172,7 @@ public class DataMunger {
 			return null;
 		}
 		
+		queryString = queryString.toLowerCase();
 		String conditionQuery = this.getConditionsPartQuery(queryString);
 		
 		if(null == conditionQuery) {
@@ -228,6 +231,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		boolean whereFound = false;
@@ -264,6 +268,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		String[] fieldArr = null;
@@ -293,6 +298,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		String[] fieldArr = null;
@@ -327,6 +333,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		String[] fieldArr = null;
@@ -362,6 +369,7 @@ public class DataMunger {
 			return null;
 		}
 
+		queryString = queryString.toLowerCase();
 		String[] strArray = queryString.trim().split(WHITE_SPACE);
 
 		String tempString = "";
